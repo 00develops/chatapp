@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two-Person Chat App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container3">
+<!-- Room ID Section -->
+<div id="room-screen">
+  <h2>Join a Chat Room</h2>
+  <input type="text" id="room-id" placeholder="Enter Room ID" />
+  <button onclick="joinRoom()">Join Room</button>
+</div>
+
+<!-- Chat Section -->
+<div id="chat-container" style="display:none;">
+  <h2>Chat Room: <span id="room-label"></span></h2>
+  
+  <div id="messages"></div>
+
+  <div class="input-container">
+    <input type="text" id="message" placeholder="Type a message..." />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+  <button onclick="leaveRoom()">Leave Room</button>
+</div>
+</div>
+<!-- Firebase SDK -->
+<script type="module" src="script.js"></script>
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-app.js";
+  import { getFirestore } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-firestore.js";
+
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAyCF35vHGuRAuGlj5HsJuO3KpzVnRBSS4",
+  authDomain: "healthhub-a6cf7.firebaseapp.com",
+  databaseURL: "https://healthhub-a6cf7-default-rtdb.firebaseio.com/",
+  projectId: "healthhub-a6cf7",
+  storageBucket: "healthhub-a6cf7.firebasestorage.app",
+  messagingSenderId: "638795518527",
+  appId: "1:638795518527:web:11bcc89421ef3e490a5e8a",
+  measurementId: "G-YB94K9MX85"
+};
+
+  initializeApp(firebaseConfig);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+
+    background-size: cover;  /* Resize the image to cover the entire area */
+    background-position: center;  /* Center the image */
+    background-repeat: no-repeat;  /* Prevent image repetition */
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+  }
+  
+  #room-screen, #chat-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #45a049;
+  }
+  
+  #messages {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: #f9f9f9;
+    margin-bottom: 10px;
+  }
+  
+  .message {
+    padding: 8px 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+  
+  .message.user {
+    background: #d1e7dd;
+    text-align: right;
+  }
+  
+  .message.other {
+    background: #f8d7da;
+    text-align: left;
+  }
+  
+  .input-container {
+    display: flex;
+  }
+  
+  .input-container input {
+    flex: 1;
+  }
+  
+  .input-container button {
+    width: 100px;
+  }
+  .container3 {
+    color: black;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    background: linear-gradient(135deg, #74EBD5, #ACB6E5);
+    background: rgba(255, 255, 255, 0.1); /* Transparent background */
+      border-radius: 15px;                  /* Rounded corners */
+      backdrop-filter: blur(10px);           /* Frosted blur effect */
+      -webkit-backdrop-filter: blur(10px);   /* For Safari */
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+      border: 1px solid rgba(255, 255, 255, 0.3); /* Border with transparency */
+
+  }
+  
+  form, .trainer {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
